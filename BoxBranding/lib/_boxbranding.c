@@ -16,7 +16,6 @@ static PyObject* name(PyObject* self, PyObject* args) \
 } \
 
 /* Available functions */
-MAKE_STRING_FUNCTION(getPliVersion)
 MAKE_STRING_FUNCTION(getDeveloperName)
 MAKE_STRING_FUNCTION(getBoxBrand)
 MAKE_STRING_FUNCTION(getOEVersion)
@@ -67,7 +66,6 @@ MAKE_STRING_FUNCTION(getFHDSkin)
 
 /* Module specification */
 static PyMethodDef boxbrandingMethods[] = {
-	{ "getPliVersion", getPliVersion, METH_NOARGS, NULL },
 	{ "getDeveloperName", getDeveloperName, METH_NOARGS, NULL },
 	{ "getBoxBrand", getBoxBrand, METH_NOARGS, NULL },
 	{ "getOEVersion", getOEVersion, METH_NOARGS, NULL },
