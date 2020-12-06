@@ -195,20 +195,6 @@ char *_getDisplayType()
 	return strdup(DISPLAY_TYPE);
 }
 
-char *_getHaveSmallFlash()
-{
-	if(strcmp(HAVE_SMALLFLASH, "False") == 0)
-		return strdup("");
-	return strdup(HAVE_SMALLFLASH);
-}
-
-char *_getHaveMiddleFlash()
-{
-	if(strcmp(HAVE_MIDDLEFLASH, "False") == 0)
-		return strdup("");
-	return strdup(HAVE_MIDDLEFLASH);
-}
-
 char *_getHaveTranscoding()
 {
 	if(strcmp(HAVE_TRANSCODING, "False") == 0)
