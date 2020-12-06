@@ -70,11 +70,6 @@ char* ReadProcEntry(char *filename)
 	return real_boxtype_name;
 }
 
-char *_getPliVersion()
-{
-	return strdup(PLIVERSION);
-}
-
 char *_getDeveloperName()
 {
 	return strdup(DEVELOPERNAME);
