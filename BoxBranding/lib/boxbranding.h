@@ -10,7 +10,6 @@ int fileExist(const char* filename);
 
 char *ReadProcEntry(char *filename);
 
-char *_getPliVersion();
 char *_getDeveloperName();
 char *_getBoxBrand();
 char *_getOEVersion();
