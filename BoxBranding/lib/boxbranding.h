@@ -35,8 +35,6 @@ char *_getForceMode();
 char *_getImageArch();
 char *_getImageFPU();
 char *_getDisplayType();
-char *_getHaveSmallFlash();
-char *_getHaveMiddleFlash();
 char *_getHaveTranscoding();
 char *_getHaveMultiTranscoding();
 char *_getHaveMultiLib();
