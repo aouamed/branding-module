@@ -1,4 +1,3 @@
-AC_INIT([openvision-branding-module],[7.0])
 AM_INIT_AUTOMAKE([dist-bzip2 foreign no-define tar-pax])
 AC_CONFIG_HEADERS([enigma2-plugins-config.h])
 
@@ -22,17 +21,11 @@ AM_PATH_PYTHON
 AX_PYTHON_DEVEL
 AX_PTHREAD
 
-AC_ARG_WITH(visionversion,
-	[  --with-visionversion=NUMBER vision version [[number,...]]],
-	[VISIONVERSION="$withval"],[VISIONVERSION=""])
-AC_SUBST(VISIONVERSION)
-AC_DEFINE_UNQUOTED(VISIONVERSION,"$VISIONVERSION",[vision version])
-
-AC_ARG_WITH(visionrevision,
-	[  --with-visionrevision=NUMBER vision revision [[number,...]]],
-	[VISIONREVISION="$withval"],[VISIONREVISION=""])
-AC_SUBST(VISIONREVISION)
-AC_DEFINE_UNQUOTED(VISIONREVISION,"$VISIONREVISION",[vision revision])
+AC_ARG_WITH(pliversion,
+	[  --with-pliversion=NUMBER pli version [[number,...]]],
+	[PLIVERSION="$withval"],[PLIVERSION=""])
+AC_SUBST(PLIVERSION)
+AC_DEFINE_UNQUOTED(VISIONVERSION,"$PLIVERSION",[pli version])
 
 AC_ARG_WITH(developername,
 	[  --with-developername=NAME developer name [[persianprince,...]]],
@@ -95,7 +88,7 @@ AC_SUBST(DISTRO_TYPE)
 AC_DEFINE_UNQUOTED(DISTRO_TYPE,"$DISTRO_TYPE",[imagetype name])
 
 AC_ARG_WITH(feedsurl,
-	[  --with-feedsurl=NAME feeds url  [[openvision,...]]],
+	[  --with-feedsurl=NAME feeds url  [[openpli,...]]],
 	[FEEDSURL="$withval"],[FEEDSURL=""])
 AC_SUBST(FEEDSURL)
 AC_DEFINE_UNQUOTED(FEEDSURL,"$FEEDSURL",[feeds url])
