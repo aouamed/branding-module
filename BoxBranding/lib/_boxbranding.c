@@ -16,7 +16,7 @@ static PyObject* name(PyObject* self, PyObject* args) \
 } \
 
 /* Available functions */
-MAKE_STRING_FUNCTION(getVisionVersion)
+MAKE_STRING_FUNCTION(getPliVersion)
 MAKE_STRING_FUNCTION(getDeveloperName)
 MAKE_STRING_FUNCTION(getBoxBrand)
 MAKE_STRING_FUNCTION(getOEVersion)
