@@ -25,7 +25,7 @@ AC_ARG_WITH(pliversion,
 	[  --with-pliversion=NUMBER pli version [[number,...]]],
 	[PLIVERSION="$withval"],[PLIVERSION=""])
 AC_SUBST(PLIVERSION)
-AC_DEFINE_UNQUOTED(VISIONVERSION,"$PLIVERSION",[pli version])
+AC_DEFINE_UNQUOTED(PLIVERSION,"$PLIVERSION",[pli version])
 
 AC_ARG_WITH(developername,
 	[  --with-developername=NAME developer name [[persianprince,...]]],
@@ -46,7 +46,7 @@ AC_SUBST(OE_VER)
 AC_DEFINE_UNQUOTED(OE_VER,"$OE_VER",[oe number])
 
 AC_ARG_WITH(distro,
-	[  --with-distro=NAME distro name [[openvision,...]]],
+	[  --with-distro=NAME distro name [[openpli,...]]],
 	[DISTRO="$withval"],[DISTRO=""])
 AC_SUBST(DISTRO)
 AC_DEFINE_UNQUOTED(DISTRO,"$DISTRO",[distro name])
